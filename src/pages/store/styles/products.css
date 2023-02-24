@@ -1,0 +1,20 @@
+.filter_nav{
+    display: flex ;
+    top:0;
+    background-color: aliceblue;
+    height: 50px;
+    padding: 2rem ;
+    align-items: center ;
+    justify-content: space-between 
+}
+
+@media screen and (max-width : 425px) {
+   .filter_nav{
+    display: grid;
+    padding: 5px;
+    justify-content: center;
+    height: max-content;
+    gap: 5px;
+   }
+
+}

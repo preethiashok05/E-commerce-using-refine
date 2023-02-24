@@ -1,0 +1,68 @@
+.poster_row{
+    display:flex;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+*{
+    font-family: sans-serif;
+}
+.poster_row::-webkit-scrollbar{
+    display: none;
+}
+
+
+.poster ,.posterlarge{
+    width:100%;
+    margin-right: 10px;
+    object-fit: contain;
+    transition:  transform 450ms;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.078);
+    text-align: center;
+    padding: 0.5rem;
+    line-height: 0.9rem;
+}
+ .poster{
+     max-height: 160px;
+ }
+
+.poster:hover{
+    transform: scale(1.1);  
+
+}
+
+.posterlarge:hover{
+    transform: scale(1.1);  
+}
+
+@media screen and (max-width : 425px) {
+    .poster{
+        max-height: 100px;
+        padding: 1%;
+        font-size: .8rem;
+    }
+    .posterlarge{
+        max-height: 200px;
+    }
+    .services_description{
+        visibility: hidden;
+    }
+
+}
+
+.services_description{ 
+
+    font-size: 0.8rem;
+    font-weight: 0.8rem;
+    overflow:hidden;
+
+  }
+  
+  .footer{
+    height: 200px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.847);
+}

@@ -1,0 +1,156 @@
+* {
+  font-family: 'Manrope', sans-serif !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.my_profile-bg {
+  width: 340px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.my_profile_user-img {
+  border-radius: 100%;
+  margin-left: -64px;
+}
+
+.property_details-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .my_profile-bg {
+      width: 100%;
+      border-radius: 15px;
+  }
+
+  .my_profile_user-img {
+      margin-left: 0px;
+      margin-top: -64px;
+  }
+
+  .property_details-img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* banner css */
+.content{
+  padding-top:4rem;
+ margin-right:1rem ;
+  margin-left: 2rem;
+}
+
+.title_banner{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+*{
+  font-family: sans-serif;
+}
+
+.description{ 
+  width: 90%;
+  line-height: 1.3;
+  font-size: 0.8rem;
+  font-weight: 0.8rem;
+  overflow:hidden;
+ max-width: 350px;
+}
+
+.faded_btn{
+  height: 7.4rem;
+  background-image: linear-gradient(180deg , transparent ,  rgba(37 ,37,37,0.61) , #111);
+}
+
+@media screen and (max-width :606px ){
+
+  .header{
+      background-image: url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}");
+       background-size: 100%;
+       background-position: cover cover;
+  }
+ .title_banner{
+     font-size: 1rem;
+     padding-bottom: 0.1rem;
+ }
+
+ .description{
+ font-size: 0.8rem;
+}
+
+  .content{
+  margin-left: 1rem;
+  padding-top: 2.5rem;
+  }
+
+  .faded_btn{
+      height: 5rem;
+  }       
+} 
+
+
+@media screen and (min-width: 1400px) {
+
+  .header{
+    height:560px;
+  }
+  
+  .content{
+    padding-top: 10rem;
+    margin-left: 10rem;
+  }
+  .faded_btn{
+    padding-top: 20rem;
+  }
+  
+ 
+}
+
+@media screen and (min-width: 1600px) {
+  .header{
+    height:560px;
+  }
+  .content{
+    padding-top: 10rem;
+    margin-left: 10rem;
+  }
+  .faded_btn{
+    padding-top: 20rem;
+  }
+ 
+}
+@media screen and (min-width: 1900px) {
+  .header{
+    height:600px;
+  }
+  .faded_btn{
+    visibility: hidden;
+  }
+}
+
+.field_home{
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+  display: flex;
+  bottom: 1.5rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: rgb(243, 249, 240);
+  font-weight: bolder;
+  padding: 1rem;
+  
+}
+.field_home:hover{
+  background-color: rgb(16, 103, 174);
+  color: white;
+  cursor: pointer;
+}
